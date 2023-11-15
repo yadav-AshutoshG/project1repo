@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1130px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 500px;
+
+        transition: all 0.5s ease-out;
+        /* kuch same tak open ho  to ham transition lagathe hai   lekin uss class ki height honi chahiye */
+    }
+
+    .rightNav {
+        text-align: center;
+    }
+
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav-resp {
+        height: 72px;
+    }
+
+    .v-class-resp {
+        /* jo laga hai  use hata do  jo  hata hai   use laga  do     */
+        visibility: hidden;
+    }
+
+    .section {
+        flex-direction: column-reverse;
+        /* ab ye   ek  ke  uper over lap  na karenge */
+    }
+
+    .text-small {
+        text-align: center;
+    }
+
+    .text-big {
+        text-align: start;
+    }
+
+    .buttons .btn {
+        text-align: center;
+    }
+
+    .paras {
+        padding: 0px;
+    }
+}

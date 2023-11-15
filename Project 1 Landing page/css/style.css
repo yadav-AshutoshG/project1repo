@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: flex;
+    /*  flex direction  by default Row hothi hai  */
+    width: 20%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 25%;
+    margin: 5px;
+    border: 3px solid white;
+    border-radius: 50px;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Sticky Nav Bar  bana yae */
+    position: sticky;
+    top: 0;
+    background: url('../img/bgimgstudy.jpg');  
+    /* height: 450px;    iski height  hame midia queray me dalnai hogi */
+    
+}
+
+
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    /*  flex direction  by default Row hothi hai  */
+    align-items: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.nav-list li {
+    cursor: pointer;
+    list-style: none;
+    padding: 26px 30px;
+}
+
+
+/* yah  navlist ke andar ke li ke andar ke a ke andar  lage  ga */
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+/* Pseudo Selector */
+.nav-list li a:hover {
+    color: black;
+
+}
+
+
+
+.rightNav {
+    width: 30%;
+    text-align: right;
+    padding: 0 26px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../img/bgimgstudy.jpg');
+    /*image nahi le raha tha to ek  kadam piche jake lo (../)se jayega*/
+    /*isase ye dono mil kar kis taraha se render ho rahe hai*/
+    background-blend-mode: saturation;
+    background-size: cover;
+}
+
+/* end  Nave bar  */
+
+
+/* start    section  */
+.firstSection {
+    height: 100vh;
+    background-size: cover;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.firstHalf {
+    margin: 50px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.secondHalf {
+    width: 30%;
+    margin: 5%;
+    height: 350px;
+}
+
+.secondHalf img {
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+    font-size: 40px;
+
+
+}
+
+.text-small {
+    font-size: 18px;
+
+
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    /* issase  bakground Transparent ho jaye ga */
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-sm {
+    /*some additional property*/
+    padding: 6px 10px;
+    vertical-align: middle;
+    /* isase button center me ajayega */
+    font-size: 16px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    /* height: 400px;   ***     esa  hard_code na kare  height le nahi pa raha hai   ek dusare ke uper OverLape ho Raha hai   */
+    justify-content: center;
+    justify-content: space-evenly;
+    /* ....      space ko evenly distribute karne ke liye use hota hai     */
+    max-width: 80%;
+    margin: auto;
+
+
+}
+
+
+
+.thumbnail img {
+
+    display: flex;
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 19px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+
+
+.section-L {
+    /*d r y    principal use ho ra ha hai */
+    flex-direction: row-reverse;
+
+
+    /* yaha hame reverse kardeta ha display flex ki direction  ko */
+
+
+}
+
+.oder_list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    text-decoration: none;
+}
+
+
+
+.paras {
+    padding: 0px 65px;
+}
+
+
+.sectionTag {
+    padding: 16px 0;
+}
+
+
+.sectionSubTagtw {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+/* ###   Start Contact ### */
+
+.contact {
+    background-color: #edeae0;
+    height: 835px;
+
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.form {
+    max-width: 60%;
+    margin: 25px auto;
+}
+
+
+.form-input {
+    margin: 14px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid gray;
+}
+
+
+
+/* ### Start Footer   ###   */
+.text-footer {
+    text-align: center;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+
+}
+
+
+
+
+.footer-bg {
+
+    background-color: gray;
+
+}
+
+.by-Ashutosh {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+}
+
+.by-Ashutosh a {
+    text-decoration: none;
+}
+
+
+
+
+/* Start   Ham Burger    */
+
+
+.burger {
+    /*  isse   postion hoga*/
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+
+.line {
+    /*   line se burger banega */
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 3px;
+
+
+
+
+}
+
+
+/* End  Ham Burger    */
+
+
+
+
+
+
+
+
+/* start Signup And Login Page */
+
+
+
+
+.login,
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/helloBgPen.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+.login-box,
+.signup-box {
+    margin: 40px;
+    width: 420px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(14, 14, 15);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.login-box h1,
+.signup-box h1 {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.l-input-box,
+.s-input-box {
+    margin: 10px;
+}
+
+.l-input-box input,
+.s-input-box input {
+
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 40px;
+
+}
+
+.l-input-box input::placeholder,
+.s-input-box input::placeholder {
+    color: #000000;
+    padding: 10px;
+
+}
+
+
+
+
+.login-btn  .l-btn ,
+.signup-btn .s-btn {
+
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    color: rgb(6, 6, 95);
+    font-size: 22px;
+
+
+}
+
+
+.Signup-link a,
+.Login-Link a {
+    color: #010220;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.Signup-link a:hover {
+    text-decoration: underline;
+}
+
+.Login-Link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.remember-Forgot a {
+    text-decoration: none;
+    font-size: 20.5px;
+    color: #000000;
+}
+
+
+.remember-Forgot a:hover {
+    text-decoration: underline;
+}
+
+.rflink{
+    text-align: right;
+    padding: 0 10px;
+}
+
+
+
+
+/* End login   And */
+/* Sign up    */
